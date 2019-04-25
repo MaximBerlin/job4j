@@ -1,35 +1,16 @@
 package ru.job4j.calculate;
 
 import org.junit.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * Test.
- *
- * @author Skakun Maxim (lackdoc@yandex.ru)
- * @version $Id$
- * @since 0.1
- */
-public class CalculateTest {
-    /**
-     * Test add.
-     */
+public class CalculatorTest  {
     @Test
-    public void whenAddOneToOneThenTwo() {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-        Calculate.main(null);
-        assertThat(
-                out.toString(),
-                is(
-                        String.format(
-                                "Hello World%s",
-                                System.getProperty("line.separator")
-                        )
-                )
-        );
+    public void whenAddOnePlusOneThenTwo()  {
+        Calculator calc = new Calculator();
+        double result = calc.add(1D, 1D);
+        double expected = 2D;
+        assertThat(result, is(expected));
     }
+
 }
