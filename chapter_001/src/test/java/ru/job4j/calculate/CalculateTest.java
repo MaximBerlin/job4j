@@ -1,4 +1,4 @@
-package ru.job4j.calculate;
+package ru.job4j.calculator;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
@@ -12,5 +12,4 @@ public class CalculatorTest  {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
 }
