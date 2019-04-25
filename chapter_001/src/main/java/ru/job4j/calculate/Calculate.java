@@ -1,5 +1,4 @@
 package ru.job4j.calculate;
-
 /**
  * Calculate.
  *
@@ -12,7 +11,6 @@ public class Calculate {
      * add.
      * double
      */
-
     public double add(double first, double second) {
         double summeAdd = first + second;
         return summeAdd;
@@ -23,12 +21,12 @@ public class Calculate {
         return summeSub;
     }
 
-    public double div(double first,double second ){
+    public double div(double first, double second) {
         double summeDiv = first / second;
         return summeDiv;
     }
 
-    public double multiple(double first, double second){
+    public double multiple(double first, double second) {
         double summeMul = first * second;
         return summeMul;
     }
