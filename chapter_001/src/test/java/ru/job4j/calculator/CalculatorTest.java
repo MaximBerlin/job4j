@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 
 public class CalculatorTest  {
     /**
-     * addition ( + )
+     * addition
      */
     @Test
     public void whenAddOnePlusOneThenTwo()  {
@@ -16,7 +16,7 @@ public class CalculatorTest  {
         assertThat(result, is(expected));
     }
     /**
-     * division ( / )
+     * division
      */
     @Test
     public void whenDiv2On2Then1()  {
@@ -26,7 +26,7 @@ public class CalculatorTest  {
         assertThat(result, is(expected));
     }
     /**
-     * subtraction ( - )
+     * subtraction
      */
     @Test
     public void whenSub2On1Then1() {
@@ -36,7 +36,7 @@ public class CalculatorTest  {
         assertThat(result, is(expected));
     }
     /**
-     * multiplication ( * )
+     * multiplication
      */
     @Test
     public void whenMul2On2Then4() {
