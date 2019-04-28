@@ -1,9 +1,6 @@
 package ru.job4j.condition;
 
-import static org.hamcrest.number.IsCloseTo.closeTo;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.experimental.categories.Categories;
 
 import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.*;
