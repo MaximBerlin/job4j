@@ -51,10 +51,10 @@ public class Triangle {
      * @return true or false
      */
     private boolean exist(double a, double c, double b) {
-        if(a <= 0 || c <= 0 || b <= 0) {
-            return false;
-        }else{
+        if(a + b > c || a + c > b || c + b > a) {
             return true;
+        }else{
+            return false;
         }
     }
 }
