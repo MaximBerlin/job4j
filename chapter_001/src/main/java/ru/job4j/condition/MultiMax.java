@@ -6,8 +6,7 @@ public class MultiMax {
         boolean booFirstAndSecond = first >= second;
         int intFirstAndSecond = booFirstAndSecond ? first : second;
         boolean booSecondAndThird = intFirstAndSecond >= third;
-        int intSecondAndThird = booSecondAndThird ? intFirstAndSecond : third;
-        result = intSecondAndThird;
+        result = booSecondAndThird ? intFirstAndSecond : third;
         return result;
     }
 }
