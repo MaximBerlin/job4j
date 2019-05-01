@@ -7,18 +7,10 @@ public class Board {
             for (int b = 0; b < width; b++ ) {
                 // условие проверки, что писать пробел или X
                 // Выше в задании мы определили закономерность, когда нужно проставлять X
-                if(a % 2 != 0) {
-                    if (b % 2 != 0) {
-                        screen.append("X");
-                    } else {
-                        screen.append(" ");
-                    }
+                if ((a + b) % 2 == 0 ) {
+                    screen.append("X");
                 } else {
-                    if (b % 2 == 0) {
-                        screen.append("X");
-                    } else {
-                        screen.append(" ");
-                    }
+                    screen.append(" ");
                 }
             }
             // добавляем перевод на новую строку.
