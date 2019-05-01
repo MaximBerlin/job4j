@@ -46,7 +46,7 @@ public class PaintTest {
     @Test
     public void whenPyramid4Top() {
         Paint paint = new Paint();
-        String rst = paint.topTrl(7);
+        String rst = paint.pyramid(7);
         System.out.println(rst);
         assertThat(rst,
                 is(
