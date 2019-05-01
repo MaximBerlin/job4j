@@ -10,14 +10,14 @@ public class Paint {
         // Буфер для результата.
         StringBuilder screen = new StringBuilder();
         // ширина будет равна высоте.
-        int width = height;
+        int width = 2 * height - 1;
         // внешний цикл двигается по строкам.
         for (int row = 0; row != height; row++) {
             // внутренний цикл определяет положение ячейки в строке.
             for (int column = 0; column != width; column++) {
                 // если строка равна ячейке, то рисуем галку.
                 // в данном случае строка определяет, сколько галок будет в строке
-                if (row >= width - column - 1 && row >= column) {
+                if (row >= height - column - 1 && row + height - 1 >= column) {
                     screen.append("^");
                 } else {
                     screen.append(" ");
