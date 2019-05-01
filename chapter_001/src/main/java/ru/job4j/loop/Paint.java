@@ -36,7 +36,7 @@ public class Paint {
         int width = height;
         for (int row = 0; row != height; row++) {
             for (int column = 0; column != width; column++) {
-                if (row >= width- column - 1) {
+                if (row >= width - column - 1) {
                     screen.append("^");
                 } else {
                     screen.append(" ");
