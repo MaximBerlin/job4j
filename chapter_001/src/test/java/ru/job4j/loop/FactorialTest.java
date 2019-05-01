@@ -11,7 +11,7 @@ public class FactorialTest {
         //напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
         Factorial check = new Factorial();
         int result = check.calc(5);
-        assertThat(result, Matchers.is(150));
+        assertThat(result, Matchers.is(120));
     }
 
     @Test

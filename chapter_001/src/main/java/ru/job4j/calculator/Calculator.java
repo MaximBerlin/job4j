@@ -7,15 +7,15 @@ public class Calculator {
     }
     // subtraction
     public double sub(double first, double second) {
-        return first + second;
+        return first - second;
     }
     // division
     public double div(double first, double second) {
-        return first + second;
+        return first / second;
     }
     // multiplication
     public double mul(double first, double second) {
-        return first + second;
+        return first * second;
     }
 
 }
