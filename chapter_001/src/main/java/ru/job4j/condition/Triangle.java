@@ -54,8 +54,4 @@ public class Triangle {
         return a + b > c && a + c > b && c + b > a;
     }
 
-    public static void main(String[] args){
-        boolean ergebnis = exist(3.6,4.8,7.9);
-        System.out.println(ergebnis);
-    }
 }
