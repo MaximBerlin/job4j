@@ -8,10 +8,10 @@ public class Check {
             for (int index = 0; index < data.length / 2; index++) {
                 arrIn = data[index];
                 arrInTwo = data[index + 1];
-                if (arrIn == arrInTwo) {
-                    result = true;
-                } else {
+                if (arrIn != arrInTwo) {
                     result = false;
+                } else {
+                    result = true;
                 }
             }
         return result;

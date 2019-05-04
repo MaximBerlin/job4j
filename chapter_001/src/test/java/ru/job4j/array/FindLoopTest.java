@@ -36,7 +36,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas1ThenMinus1() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 10 ,3};
+        int[] input = new int[] {5, 10, 3};
         int value = 1;
         int result = find.indexOf(input, value);
         int expect = -1;
