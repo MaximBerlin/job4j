@@ -24,7 +24,6 @@ public class BubbleSortTest {
         int[] result = bubbleSort.sort(input);
         int[] expect = new int[] {0, 1, 1, 2, 3, 4, 5, 5, 7, 8};
         assertThat(result, is(expect));
-
     }
 }
 
