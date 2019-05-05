@@ -10,7 +10,6 @@ public class Check {
                 if (arrIn != arrInTwo) {
                     result = false;
                     break;
-
                 }
             }
         return result;
