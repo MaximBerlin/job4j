@@ -9,7 +9,7 @@ public class BubbleSort {
         for(int index = 0;index < array.length - 1 ;index++){
             for(int a = 0;a < array.length - 1;a++){
                 int temp = array[a];
-                if(array[a] > array[a + 1]){
+                while(array[a] > array[a + 1]){
                     array[a] = array[a + 1];
                     array[a + 1] = temp;
                 }
