@@ -28,7 +28,7 @@ public class MatrixTest {
     }
     @Test
     public void when4on4() {
-        Matrix matrix = new Matrix ();
+        Matrix matrix = new Matrix();
         int[][] table = matrix.multiple(4);
         int[][] expect = {
                 {1, 2, 3, 4},
