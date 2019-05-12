@@ -14,7 +14,10 @@ public class MatrixCheck {
                         result = false;
                         break;
                     }
-
+                    if (tempA != tempA1){
+                        result = false;
+                        break;
+                    }
        }
         return result;
     }
