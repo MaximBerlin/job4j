@@ -8,13 +8,7 @@ public class MatrixCheck {
                     boolean tempA1 = data[data.length - 1 - spalte][data.length - 1 - spalte];
                     boolean tempB = data[spalte][data.length - 1 - spalte];
                     boolean tempB1 = data[data.length - 1 - spalte][spalte];
-                    if (tempA == tempA1 && tempB == tempB1) {
-                        result = true;
-                    } else {
-                        result = false;
-                        break;
-                    }
-                    if (tempA != tempA1){
+                    if (tempA != tempA1 || tempB != tempB1) {
                         result = false;
                         break;
                     }
