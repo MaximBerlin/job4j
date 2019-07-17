@@ -1,5 +1,4 @@
 package ru.job4j.puzzle;
-asd
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
