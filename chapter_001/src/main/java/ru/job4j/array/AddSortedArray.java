@@ -22,7 +22,11 @@ public class AddSortedArray {
             indexTwo++;
             counter++;
         }
-
+        while(indexOne < a.length) {
+            together[counter] = a[indexOne];
+            indexOne++;
+            counter++;
+        }
             return together;
     }
 }
