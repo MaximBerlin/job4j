@@ -18,4 +18,13 @@ public class AddSortedArrayTest {
         int[] expect = new int[] {0,1,2,3,4,5,6};
         assertThat(result, is(expect));
     }
+    @Test
+    public void summArraysFerstArrayLonger() {
+        AddSortedArray addSortedArray = new AddSortedArray();
+        int[] inputA = {3,4,5,6};
+        int[] inputB = {0,1,2};
+        int[] result = addSortedArray.twoArraysOnOne(inputA,inputB);
+        int[] expect = new int[] {0,1,2,3,4,5,6};
+        assertThat(result, is(expect));
+    }
 }
