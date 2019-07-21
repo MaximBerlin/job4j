@@ -27,4 +27,12 @@ public class AddSortedArrayTest {
         int[] expect = new int[] {0,1,2,3,4,5,6};
         assertThat(result, is(expect));
     }
+    @Test
+    public void sortArray() {
+        AddSortedArray addSortedArray = new AddSortedArray();
+        int[] inputA = {1,3};
+        int[] inputB = {2,4};
+        int[] result = addSortedArray.twoArraysOnOne(inputA,inputB);
+        int[] expect = new int[] {1,2,3,4};
+    }
 }
