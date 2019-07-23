@@ -5,10 +5,10 @@ public class Matrix {
         int[][] table = new int[size][size];
         int num = 1;
         int sum;
-        for (int zeile = 0; zeile < table.length; zeile++) {
-            for (int spalte = 0; spalte < table[zeile].length; spalte++) {
-                sum = (spalte * num) + num;
-                table[zeile][spalte] = sum;
+        for (int row = 0; row < table.length; row++) {
+            for (int column = 0; column < table[row].length; column++) {
+                sum = (column * num) + num;
+                table[row][column] = sum;
             }
             num++;
         } return table;

@@ -2,29 +2,29 @@ package ru.job4j.array;
 
 public class AddSortedArray {
 
-    public static int[] twoArraysOnOne(int a[], int b[]) {
-        int together[] = new int[a.length + b.length];
-        int indexOne = 0;
-        int indexTwo = 0;
+    public static int[] twoArraysOnOne(int[] a, int[] b) {
+        int[] together = new int[a.length + b.length];
+        int first = 0;
+        int second = 0;
         int counter = 0;
-
-        while(counter < a.length && counter < b.length) {
-            if (a[indexOne] < b[indexTwo]) {
-                together[counter] = a[indexOne];
-                indexOne++;
+        while (counter < a.length && counter < b.length) {
+            if (a[first] < b[second]) {
+                together[counter] = a[first];
+                first++;
             } else {
-                together[counter] = b[indexTwo];
-                indexTwo++;
-            } counter++;
+                together[counter] = b[second];
+                second++;
+            }
+                counter++;
         }
-        while(indexTwo < b.length){
-            together[counter] = b[indexTwo];
-            indexTwo++;
+        while (second < b.length) {
+            together[counter] = b[second];
+            second++;
             counter++;
         }
-        while(indexOne < a.length) {
-            together[counter] = a[indexOne];
-            indexOne++;
+        while (first < a.length) {
+            together[counter] = a[first];
+            first++;
             counter++;
         }
             return together;

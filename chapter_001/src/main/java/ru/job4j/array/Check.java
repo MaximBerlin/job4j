@@ -3,11 +3,11 @@ package ru.job4j.array;
 public class Check {
     public boolean mono(boolean[] data) {
         boolean result = true;
-        boolean arrIn = data[0];
-        boolean arrInTwo;
+        boolean first = data[0];
+        boolean second;
             for (int index = 0; index < data.length; index++) {
-                arrInTwo = data[index];
-                if (arrIn != arrInTwo) {
+                second = data[index];
+                if (first != second) {
                     result = false;
                     break;
                 }

@@ -6,12 +6,12 @@ package ru.job4j.array;
 public class BubbleSort {
     boolean result = true;
     public int[] sort(int[] array) {
-        for (int index = 0; index < array.length - 1; index++) {
-            for (int a = 0; a < array.length - 1 - index; a++) {
-                int temp = array[a];
-                if (array[a] > array[a + 1]) {
-                    array[a] = array[a + 1];
-                    array[a + 1] = temp;
+        for (int out = 0; out < array.length - 1; out++) {
+            for (int in = 0; in < array.length - 1 - out; in++) {
+                int temp = array[in];
+                if (array[in] > array[in + 1]) {
+                    array[in] = array[in + 1];
+                    array[in + 1] = temp;
                 }
             }
         }
